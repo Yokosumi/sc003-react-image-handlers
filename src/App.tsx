@@ -12,9 +12,9 @@ export const App = () => {
     return (
         <div
             style={{
-                maxWidth: '1200px',
+                maxWidth: '1600px',
                 width: '100%',
-                aspectRatio: '10 / 6',
+                height: '100%',
                 margin: '0 auto',
             }}
         >

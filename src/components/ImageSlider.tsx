@@ -24,13 +24,22 @@ export const ImageSlider = ({ imageUrls }: ImageSliderProps) => {
 
     return (
         <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-            <div style={{ width: '100%', height: '100%', display: 'flex' }}>
+            <div
+                style={{
+                    width: '100%',
+                    height: '100%',
+                    display: 'flex',
+                    overflow: 'hidden',
+                }}
+            >
                 {imageUrls.map((url) => (
                     <img
                         key={url}
                         src={url}
                         className="img-slider-img"
-                        style={{ translate: `${-100 * imageIndex}%` }}
+                        style={{
+                            translate: `${-100 * imageIndex}%`,
+                        }}
                         alt="cat"
                     />
                 ))}

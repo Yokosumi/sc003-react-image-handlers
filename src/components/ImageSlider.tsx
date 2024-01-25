@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 type ImageSliderProps = {
     imageUrls: string[]
@@ -10,8 +11,12 @@ export const ImageSlider = ({ imageUrls }: ImageSliderProps) => {
     return (
         <div>
             <img src={imageUrls[imageIndex]} alt="cat" />
-            <button>Next</button>
-            <button>Previous</button>
+            <button>
+                <ArrowLeft />{' '}
+            </button>
+            <button>
+                <ArrowRight />
+            </button>
         </div>
     )
 }

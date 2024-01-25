@@ -9,7 +9,7 @@ export const ImageSlider = ({ imageUrls }: ImageSliderProps) => {
     const [imageIndex, setImage] = useState(0)
 
     return (
-        <div>
+        <div style={{ width: '100%', height: '100%' }}>
             <img src={imageUrls[imageIndex]} alt="cat" />
             <button>
                 <ArrowLeft />{' '}

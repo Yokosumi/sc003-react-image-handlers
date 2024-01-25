@@ -10,8 +10,8 @@ const Images = [cat1, cat2, cat3, cat4, cat5]
 
 export const App = () => {
     return (
-        <>
+        <div>
             <ImageSlider imageUrls={Images} />
-        </>
+        </div>
     )
 }

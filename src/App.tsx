@@ -14,7 +14,7 @@ export const App = () => {
             style={{
                 maxWidth: '1200px',
                 width: '100%',
-                aspectRatio: '10/ 6',
+                aspectRatio: '10 / 6',
                 margin: '0 auto',
             }}
         >
